@@ -12,7 +12,7 @@
 #include <string>
 #include <vector>
 
-	// largest extended ascii value is 255, if not using extended one use 127
+// largest extended ascii value is 255, if not using extended one use 127
 #define largest_ASCII_value 255
 
 bool isUnique_bitset(const std::string &word)
@@ -54,9 +54,9 @@ bool isUnique_loop(const std::string &word)
 	return true;
 }
 
-std::string mergeSort(std::string &word, int start, int end)
+void mergeSort(std::string &word, int start, int end)
 {
-	if(start == end) return word;
+	if(start == end) return ;
 	
 	int mid = (start + end)/2;
 	
@@ -74,7 +74,7 @@ std::string mergeSort(std::string &word, int start, int end)
 		}
 	}
 	
-	return word;
+	return ;
 }
 
 bool isUnique_mergeSort(std::string word)
